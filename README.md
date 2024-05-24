@@ -9,3 +9,17 @@ Should any of the resources that I will use conflict with your copyrights becaus
 This project currently has no licensing, and anyone can access it.
 
 For more inquiries, contact me at siphonkebe@gmail.com
+
+
+
+#TODO:
+
+sorting function:
+
+numerically (high to low, and low to high)
+alphabetically (a-z)
+
+filter function:
+
+popular
+most rated

@@ -1,0 +1,123 @@
+/* agent stylesheet reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* local variables */
+
+:root{
+    --primary: #173F5F;
+    --secondary: #F6D55C;
+    --tertiary: #20629B;
+    --accent: #ED553B;
+    --dark-font: #05050E;
+    --light-font: #EEE6E8;
+    --box-shadow: 10px 10px 20px rgb(42, 40, 40 / 15%);
+    --card-border-radius: 10px;
+    --card-border: rgb(29, 31, 33);
+    --button-border-radius: 8px;
+    --large-font: 48px;
+    --medium-font: 30px;
+    --small-font: 18px;
+    --smallet-font: 12px;
+}
+
+/* dark mode */
+
+/* light mode */
+
+/* page layout */
+
+/* nav layout */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-font);
+    padding: 24px 50px 0;
+}
+
+/* logo */
+
+#logo{
+    width: 200px;
+    position: relative;
+    top: -6px;
+}
+
+/* search bar */
+#search-btn,
+#search-input{
+    padding: 8px 12px;
+    border-radius: var(--button-border-radius);
+}
+#search-btn{
+    width: fit-content;
+    background-color: var(--accent);
+}
+
+#search-input{
+    width: 200px;
+    background-color: var(--light-font);
+}
+
+.fa-search{
+    color: var(--light-font);
+}
+
+/* profile elements */
+
+.profile-container{
+    display: flex;
+    gap: 56px;
+
+    & #mode-btn{
+        width: fit-content;
+        padding: 8px 5px;
+        background-color: transparent;
+        border: var(--dark-font) 2px solid;
+        border-radius: var(--button-border-radius);
+    }
+    & .icon{
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* hero section */
+
+.hero-section{
+    display: grid;
+    grid-template-rows: 100px 500px;
+    grid-template-columns: 100vw;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card.one{
+    grid-row: 1;
+    grid-column: 1/2;
+}
+.card.two{
+    grid-row: 1;
+    grid-column: 2/3;
+}
+.card.one{
+    grid-row: 1;
+    grid-column: 3/4;
+}
+
+/* cards */
+
+.card{
+    border: 2px solid var(--card-border);
+    border-radius: var(--card-border-radius);
+}
