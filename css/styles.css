@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+/* global styles */
+
+*{
+    color: var(--dark-font);
+}
+
 /* local variables */
 
 :root{
@@ -22,16 +28,21 @@
     --large-font: 48px;
     --medium-font: 30px;
     --small-font: 18px;
-    --smallet-font: 12px;
+    --smallest-font: 14px;
 }
 
 /* dark mode */
 
 /* light mode */
 
-/* page layout */
+/* header start */
 
-/* nav layout */
+header{
+    height: 100vh;
+    background-color: #b77474;
+}
+
+/* nav start */
 
 nav{
     display: flex;
@@ -87,19 +98,28 @@ nav{
     }
 }
 
-/* hero section */
+/* nav end */
+
+/* hero section start */
 
 .hero-section{
-    display: grid;
-    grid-template-rows: 100px 500px;
-    grid-template-columns: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 80px;
 }
+
+/* new arrivals title */
+
+#new-arrivals{
+    text-align: center;
+    font: 40px bold;
+}  
 
 .card-wrapper{
     display: grid;
-    grid-template-rows: 200px;
+    grid-template-rows: 300px;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    /* gap: 20px; */
 }
 
 .card.one{
@@ -114,10 +134,40 @@ nav{
     grid-row: 1;
     grid-column: 3/4;
 }
+ 
 
 /* cards */
 
 .card{
     border: 2px solid var(--card-border);
     border-radius: var(--card-border-radius);
-}
+    width: 380px;
+    height: fit-content;
+
+    & .card-image{
+        width: min-content;
+    }
+
+    & .card-details{
+        padding: 14px 18px;
+    }
+    & .item-price{
+        font-size: var(--medium-font);
+    }
+
+    /* & .item-ratings{} */
+
+    & .item-view-more{
+        font-size: var(--small-font);
+    }
+
+    & .item-wishlist{
+
+    }
+
+    & .item-add-cart{}
+}   
+
+/* hero section end */
+
+/* header end */
